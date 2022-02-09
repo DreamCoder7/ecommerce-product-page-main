@@ -23,6 +23,6 @@
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/redstorm-hub)
+- Frontend Mentor - [@Abreham](https://www.frontendmentor.io/profile/redstorm-hub)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 # ecommerce-product-page-main
