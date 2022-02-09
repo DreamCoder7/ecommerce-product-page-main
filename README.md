@@ -9,7 +9,7 @@
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://ecommerce-ab.netlify.app/)
+- Live Site URL: [https://ecommerce-ab.netlify.app](https://ecommerce-ab.netlify.app/)
 
 ## My process
 
