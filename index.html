@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <button class="nav-btn btn-open">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="nav-icon"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+
+        <div class="header-logo">
+          <img src="images/logo.svg" alt="Sneakers logo" class="logo" />
+        </div>
+
+        <ul class="nav-list">
+          <button class="nav-btn btn-close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="nav-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <li class="nav-item"><a href="#" class="nav-link">Collections</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Men</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Women</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="profile">
+        <ion-icon name="cart-outline" class="icon-cart">&nbsp;</ion-icon>
+        <div class="amount-cart hidden">3</div>
+        <img
+          src="images/image-avatar.png"
+          alt="a man with long hair"
+          class="user-img"
+        />
+      </div>
+      <div class="cart-profile hidden">
+        <p class="cart">Cart</p>
+
+        <div class="cart-profile-cont">
+          <div class="product">
+            <img
+              src="images/image-product-1-thumbnail.jpg"
+              alt="shoe img"
+              class="cart-profile-img"
+            />
+            <div class="">
+              <p class="cart-profile-text">Fall Limited Edition Sneakers</p>
+              <p class="price">
+                <span class="single-price">125.00</span>
+                <span class="times">X</span>
+                <span class="amount">3</span>
+                <span class="total-price">375.00</span>
+              </p>
+            </div>
+
+            <ion-icon name="trash-outline" class="icon-trash"></ion-icon>
+          </div>
+          <button class="btn">Checkout</button>
+        </div>
+
+        <p class="empty-cart">Your cart is empty.</p>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section-hero">
+        <div class="hero-img">
+          <div class="hero-img-cont">
+            <div class="image-operation">
+              <div class="main-slider">
+                <img
+                  src="images/image-product-1.jpg"
+                  alt="shoes"
+                  class="main-img main-img-1 active-img"
+                />
+              </div>
+              <div class="main-slider">
+                <img
+                  src="images/image-product-2.jpg"
+                  alt="shoes"
+                  class="main-img main-img-2"
+                />
+              </div>
+              <div class="main-slider">
+                <img
+                  src="images/image-product-3.jpg"
+                  alt="shoes"
+                  class="main-img main-img-3"
+                />
+              </div>
+              <div class="main-slider">
+                <img
+                  src="images/image-product-4.jpg"
+                  alt="shoes"
+                  class="main-img main-img-4"
+                />
+              </div>
+            </div>
+
+            <div class="thumbnail-img">
+              <img
+                src="images/image-product-1-thumbnail.jpg"
+                alt="shoes"
+                class="preview-img thumbnail-active-img"
+                data-img="1"
+              />
+              <img
+                src="images/image-product-2-thumbnail.jpg"
+                alt="shoes"
+                class="preview-img"
+                data-img="2"
+              />
+              <img
+                src="images/image-product-3-thumbnail.jpg"
+                alt="shoes"
+                class="preview-img"
+                data-img="3"
+              />
+              <img
+                src="images/image-product-4-thumbnail.jpg"
+                alt=""
+                class="preview-img"
+                data-img="4"
+              />
+            </div>
+          </div>
+
+          <!-- Temp -->
+          <div class="main-icon-cont">
+            <ion-icon
+              name="chevron-back-outline"
+              class="main-icon main-icon-left"
+            ></ion-icon>
+            <ion-icon
+              name="chevron-forward-outline"
+              class="main-icon main-icon-right"
+            ></ion-icon>
+          </div>
+          <!-- Temp -->
+        </div>
+        <div class="hero-content">
+          <div class="hero-content-cont">
+            <div class="hero-title">
+              <p class="sub-title">sneaker company</p>
+              <h1 class="main-heading">Fall Limited Edition Sneakers</h1>
+            </div>
+            <p class="hero-text">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+
+            <div class="hero-price">
+              <p class="discount">$125.00 <span class="percent">50%</span></p>
+              <p class="shoe-price">$250.00</p>
+            </div>
+
+            <div class="btns">
+              <div class="add">
+                <ion-icon
+                  name="remove-outline"
+                  class="btn-add btn-low"
+                ></ion-icon>
+                <span class="value">0</span>
+                <ion-icon
+                  name="add-outline"
+                  class="btn-add btn-high"
+                ></ion-icon>
+              </div>
+
+              <button class="hero-btn">
+                <ion-icon name="cart-outline" class="hero-icon"></ion-icon>
+                <a href="#" class="hero-link">Add to cart</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="popup hidden">
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+
+        <div class="popup-main-img">
+          <div class="slider">
+            <img
+              src="images/image-product-1.jpg"
+              alt="shoes img"
+              class="popup-img"
+              data-img="1"
+            />
+          </div>
+          <div class="slider">
+            <img
+              src="images/image-product-2.jpg"
+              alt="shoes img"
+              class="popup-img"
+              data-img="2"
+            />
+          </div>
+          <div class="slider">
+            <img
+              src="images/image-product-3.jpg"
+              alt="shoes img"
+              class="popup-img"
+              data-img="3"
+            />
+          </div>
+          <div class="slider">
+            <img
+              src="images/image-product-4.jpg"
+              alt="shoes img"
+              class="popup-img"
+              data-img="4"
+            />
+          </div>
+        </div>
+
+        <div class="popup-thumbnail-img"></div>
+
+        <div class="popup-icon-cont">
+          <ion-icon
+            name="chevron-back-outline"
+            class="popup-icon popup-icon-left"
+          ></ion-icon>
+          <ion-icon
+            name="chevron-forward-outline"
+            class="popup-icon popup-icon-right"
+          ></ion-icon>
+        </div>
+      </div>
+
+      <div class="overlay hidden">&nbsp;</div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Abreham</a>.
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
